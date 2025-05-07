@@ -1,0 +1,21 @@
+# File: general.yaml
+# Project: Elektrobit-Demo-Software-Recipes
+# Created Date: We/05/2025
+# -----
+# Last Modified: We/05/2025 18:21:07
+# -----
+# Copyright (c) 2025 GlobalLogic, a Hitachi Group Company
+
+---
+- name: Install dependencies
+  ansible.builtin.package:
+    name:
+      - sudo
+      - curl
+      - gnupg
+      - apt-transport-https
+      - gcc
+      - cmake
+    state: present
+    update_cache: true
+# TODO: The file is currently in development and not yet ready for EB Corbos installation.

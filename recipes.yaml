@@ -1,0 +1,37 @@
+# File: recipes.yaml
+# Project: Elektrobit-Demo-Software-Recipes
+# Created Date: Tu/07/2024
+# -----
+# Last Modified: Th/05/2025 15:12:10
+# -----
+# Copyright (c) 2025 GlobalLogic, a Hitachi Group Company
+
+---
+recipes:
+  EB-Corbos-SDK:
+    name: SDK for Elektrobit Corbos AdaptiveCore
+    description: Installs EB Corbos AdaptiveCore - a proven-in-use middleware that realizes automotive requirements for application development.
+    versions:
+      v2.2:
+        playbook: optional/eb-corbos-sdk-setup-v2.2.yaml
+        metadata:
+          supported_arch:
+            - arm64
+          minimum_ram_gb: 4
+          options:
+            - name: license_key
+              description: License key provided by Elektrobit
+
+  EB-Tresos-Studio:
+    name: Elektrobit Tresos Studio and AutoCore
+    description: Installs EB Tresos - a consistent tool environment for Classic AUTOSAR-based ECU software configuration, validation, and code generation.
+    versions:
+      v28.1.0:
+        playbook: optional/eb-tresos-studio-setup-v28.1.0.yaml
+        metadata:
+          supported_arch:
+            - x86_64
+          minimum_ram_gb: 4
+          options:
+            - name: license_key
+              description: License key provided by Elektrobit

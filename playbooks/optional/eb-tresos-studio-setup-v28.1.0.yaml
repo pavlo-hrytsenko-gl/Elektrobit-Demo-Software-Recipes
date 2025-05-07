@@ -1,0 +1,14 @@
+# File: eb-tresos-studio-setup-v28.1.0.yaml
+# Project: Elektrobit-Demo-Software-Recipes
+# Created Date: We/05/2025
+# -----
+# Last Modified: We/05/2025 18:20:16
+# -----
+# Copyright (c) 2025 GlobalLogic, a Hitachi Group Company
+
+---
+- hosts: localhost
+  gather_facts: yes
+  tasks:
+    - ansible.builtin.include_role:
+      name: eb-tresos-studio-setup
